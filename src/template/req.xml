@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+    <soapenv:Header>
+        <msgID:messageId xmlns:msgID="http://www.sap.com/webas/640/soap/features/messageId/">uuid:00163e02-a5da-1ee1-a7d5-e24f8067c483</msgID:messageId>
+    </soapenv:Header>
+    <soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+            <MessageHeader>
+                <CreationDateTime>2024-04-16T16:00:33Z</CreationDateTime>
+                <ID>MSG_2024_04_16_02</ID>
+            </MessageHeader>
+            <JournalEntryCreateRequest>
+                <MessageHeader>
+                    <CreationDateTime>2024-04-16T16:00:33Z</CreationDateTime>
+                    <ID>SUBMSG_2024_04_16_02</ID>
+                </MessageHeader>
+                <JournalEntry>
+                    <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+                    <OriginalReferenceDocument>Doc</OriginalReferenceDocument>
+                    <OriginalReferenceDocumentLogicalSystem>XYZ</OriginalReferenceDocumentLogicalSystem>
+                    <BusinessTransactionType>RFBU</BusinessTransactionType>
+                    <AccountingDocumentType>UE</AccountingDocumentType>
+                    <DocumentReferenceID>OG1-11 431/</DocumentReferenceID>
+                    <DocumentHeaderText>htext</DocumentHeaderText>
+									<CreatedByUser>CB9980000080</CreatedByUser>
+                    <CompanyCode>1000</CompanyCode>
+									<DocumentDate>2023-10-16</DocumentDate>
+                    <PostingDate>2024-04-16</PostingDate>
+                    <TaxDeterminationDate>2023-11-01</TaxDeterminationDate>
+                    <Reference1InDocumentHeader>Ref1</Reference1InDocumentHeader>
+                    <Reference2InDocumentHeader>Ref2</Reference2InDocumentHeader>
+                    <Item>
+                        <GLAccount>70100000</GLAccount>
+                        <AmountInTransactionCurrency currencyCode="EUR">-1782.76</AmountInTransactionCurrency>
+                        <DebitCreditCode>H</DebitCreditCode>
+                        <DocumentItemText>CHQ CDE 202305053 FASOLATO SARL</DocumentItemText>
+                        <Tax>
+                            <TaxCode>A0</TaxCode>
+                        </Tax>
+                    </Item>
+                    <CreditorItem>
+                        <ReferenceDocumentItem>1</ReferenceDocumentItem>
+											<Creditor>1000001</Creditor>
+                        <AmountInTransactionCurrency currencyCode="EUR">1782.76</AmountInTransactionCurrency>
+                        <DebitCreditCode>S</DebitCreditCode>
+                    </CreditorItem>
+                    <ProductTaxItem>
+											<TaxCode>A0</TaxCode>
+                        <TaxItemClassification>MWS</TaxItemClassification>
+                        <IsDirectTaxPosting>true</IsDirectTaxPosting>
+                        <AmountInTransactionCurrency currencyCode="EUR">0.00</AmountInTransactionCurrency>
+                        <DebitCreditCode>H</DebitCreditCode>
+                        <TaxBaseAmountInTransCrcy currencyCode="EUR">-1782.76</TaxBaseAmountInTransCrcy>
+                    </ProductTaxItem>
+                </JournalEntry>
+                <JournalEntry>
+                    <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+                    <OriginalReferenceDocument>Doc</OriginalReferenceDocument>
+                    <OriginalReferenceDocumentLogicalSystem>XYZ</OriginalReferenceDocumentLogicalSystem>
+                    <BusinessTransactionType>RFBU</BusinessTransactionType>
+                    <AccountingDocumentType>UE</AccountingDocumentType>
+                    <DocumentReferenceID>OG1-11 432/</DocumentReferenceID>
+                    <DocumentHeaderText>htext</DocumentHeaderText>
+									<CreatedByUser>CB9980000080</CreatedByUser>
+                    <CompanyCode>1000</CompanyCode>
+									<DocumentDate>2023-10-16</DocumentDate>
+                    <PostingDate>2024-04-16</PostingDate>
+                    <TaxDeterminationDate>2023-11-01</TaxDeterminationDate>
+                    <Reference1InDocumentHeader>Ref1</Reference1InDocumentHeader>
+                    <Reference2InDocumentHeader>Ref2</Reference2InDocumentHeader>
+                    <Item>
+                        <GLAccount>70100000</GLAccount>
+                        <AmountInTransactionCurrency currencyCode="EUR">-17.76</AmountInTransactionCurrency>
+                        <DebitCreditCode>H</DebitCreditCode>
+                        <DocumentItemText>CHQ CDE 202305053 FASOLATO SARL</DocumentItemText>
+                        <Tax>
+                            <TaxCode>A0</TaxCode>
+                        </Tax>
+                    </Item>
+                    <CreditorItem>
+                        <ReferenceDocumentItem>1</ReferenceDocumentItem>
+											<Creditor>1000001</Creditor>
+                        <AmountInTransactionCurrency currencyCode="EUR">17.76</AmountInTransactionCurrency>
+                        <DebitCreditCode>S</DebitCreditCode>
+                    </CreditorItem>
+                    <ProductTaxItem>
+											<TaxCode>A0</TaxCode>
+                        <TaxItemClassification>MWS</TaxItemClassification>
+                        <IsDirectTaxPosting>true</IsDirectTaxPosting>
+                        <AmountInTransactionCurrency currencyCode="EUR">0.00</AmountInTransactionCurrency>
+                        <DebitCreditCode>H</DebitCreditCode>
+                        <TaxBaseAmountInTransCrcy currencyCode="EUR">-17.76</TaxBaseAmountInTransCrcy>
+                    </ProductTaxItem>
+                </JournalEntry>
+            </JournalEntryCreateRequest>
+        </sfin:JournalEntryBulkCreateRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

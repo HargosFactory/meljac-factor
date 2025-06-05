@@ -1,0 +1,12 @@
+Titre : Paiements;;;;;;;;;;;;;;;;
+Compte client : 78569-MELJAC-Standard-Domestique-EUR;;;;;;;;;;;;;;;;
+Export r�alis� le : 29/08/2024;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+Raison sociale;SIREN;NIC;Code acheteur;Ma r�f�rence;Mode de paiement;Date de saisie;Montant (EUR);Montant affect� (EUR);Solde;Statut;Num�ro de paiement;Date d'�ch�ance;Motif de non affectation;Nom du donneur d'ordre;Num�ro du document;Type de document
+MELJAC NORTH AMERICA;1006129;;1006129;;Virement;12/10/2023;16 954,72;16 954,72;0;Paiement affecté;70259945;;;MELJAC NORTH AMERICA;plusieurs documents associés;SOLDE
+INTRAMETAL;1006212;;1006212;;Virement;12/10/2023;3 232,00;3 232,00;0;Paiement affecté;70259946;;;INTRAMETAL;400002385;Facture
+BALANCE MELJAC;999018989;78569;7777777;;Virement;21/03/2024;1 051,48;0;1 051,48;Paiement non affect�;70259942;-;En cours de qualification 202303061 2023-05-10 PAYMENT AMT 1051.48 EUR 0000000;DISTRIBUTION D APPAREILLAGE ELECTRI;;SOLDE
+BALANCE MELJAC;999018989;78569;7777777;;Virement;21/03/2024;225,48;0;225,48;Paiement non affect�;70259944;-;En cours de qualification VIREMENT DE SARL DENIS MATHEZ ENTRE;SARL  DENIS MATHEZ ENTREPRISE      ;;SOLDE
+BALANCE MELJAC;999018989;78569;7777777;;Virement;21/03/2024;43,99;0;43,99;Paiement non affect�;70259947;-;En cours de qualification VIREMENT DE SARL DENIS MATHEZ ENTRE;SARL  DENIS MATHEZ ENTREPRISE      ;;SOLDE
+ASSA ABLOY HOSPITALITY SAS;1007307;;1007307;;Virement;12/10/2023;565,49;565,49;0;Paiement affecté;70259947;;;ASSA ABLOY HOSPITALITY SAS;400002383;Facture
+STUDIO ON;1007053;;1007053;;Virement;12/10/2023;318,19;318,19;0;Paiement affecté;70259948;;;STUDIO ON;plusieurs documents associés;SOLDE

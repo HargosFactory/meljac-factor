@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+	<soapenv:Header>
+		<msgID:messageId xmlns:msgID="http://www.sap.com/webas/640/soap/features/messageId/">uuid:00163e02-a5da-1ee1-a7d5-e24f8067c623</msgID:messageId>
+	</soapenv:Header>
+	<soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+			<MessageHeader>
+				<CreationDateTime>2024-02-22T09:00:00Z</CreationDateTime> <!-- get current timestamp and convert-->
+				<ID>MSG_2024-02_22_01</ID> <!-- get last id. if last id compose with current date (Y-m_d), get facNumber and increment (last part of ID). Else create new id with current date -->
+			</MessageHeader>
+			<JournalEntryCreateRequest>
+				<MessageHeader>
+					<CreationDateTime>2024-02-22T09:00:00Z</CreationDateTime> <!-- get current timestamp and convert (duplicate) -->
+					<ID>SUBMSG_2024-02-22_01</ID> <!-- get last id. if last id compose with current date (Y-m_d), get facNumber and increment (last part of ID). Else create new id with current date (duplicate) -->
+				</MessageHeader>
+				<JournalEntry>
+					<OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType> <!-- Mandatory (dont touch) -->
+					<OriginalReferenceDocument>00001</OriginalReferenceDocument> <!-- original fac number (column. "REF COMMANDE") Mandatory -->
+					<OriginalReferenceDocumentLogicalSystem>TESTSYS</OriginalReferenceDocumentLogicalSystem> <!-- ??? -->
+					<BusinessTransactionType>RFBU</BusinessTransactionType> <!-- check Mandatory -->
+					<AccountingDocumentType>KR</AccountingDocumentType> <!-- ??? Mandatory -->
+					<DocumentReferenceID>Test CFIN</DocumentReferenceID> <!-- ??? --> ref créance
+					<DocumentHeaderText>Test Supplier Invoice</DocumentHeaderText> <!-- ??? (client name (column. "Numero client") -->
+					<CreatedByUser>CB9980000007</CreatedByUser> <!-- how to get userId ? Mandatory -->
+					<CompanyCode>1000</CompanyCode> <!-- Mandatory (dont touch) -->
+					<DocumentDate>2024-02-22</DocumentDate> <!--  Mandatory (colum. "Date Fichier" or "Date piece" ???)--> date de la créance
+					<PostingDate>2024-02-22</PostingDate> <!--  Mandatory current date --> date du jour
+					<TaxDeterminationDate>2024-02-22</TaxDeterminationDate> <!-- ??? --> date de la créance
+					<Reference1InDocumentHeader>TEST1</Reference1InDocumentHeader> <!-- header ref ??? --> ref créance ?
+					<Reference2InDocumentHeader>TEST2</Reference2InDocumentHeader> <!-- header ref ??? --> ref créance ?
+					<Item>
+						<GLAccount>70100000</GLAccount> <!-- Mandatory (column. "Tiers" ?) --> 467007 (onglet variable) (panel)
+						<AmountInTransactionCurrency currencyCode="EUR">10</AmountInTransactionCurrency> devise + montant de la créance
+						<DebitCreditCode>S</DebitCreditCode> <!-- optional define in function AmountInTransactionCurrency (credit define S (+) and credit define H (-)) -->
+						<DocumentItemText>GL account item</DocumentItemText> <!-- ??? (type document or document ref) --> item text
+						<Tax>
+							<TaxCode>A0</TaxCode> <!-- ??? define AO = 0% Output Tax non taxable -->
+						</Tax>
+						<AccountAssignment> //
+							<ProfitCenter>CP1000</ProfitCenter> <!-- Mandatory or optional ??? --> // retirer
+						</AccountAssignment> //
+					</Item>
+					<CreditorItem>
+						<ReferenceDocumentItem>1</ReferenceDocumentItem> <!-- ??? --> ?? a voir avec johnny
+						<Creditor>1000010</Creditor> <!-- Mandatory (column. "Numero Emetteur" -->  numero debiteur (chez factor)
+						<AmountInTransactionCurrency currencyCode="EUR">-10</AmountInTransactionCurrency> <!-- Mandatory (column. "TOTAL TTC") -->devise + montant créance
+						<DebitCreditCode>H</DebitCreditCode> <!-- optional define in function AmountInTransactionCurrency (credit define S (+) and credit define H (-)) -->
+					</CreditorItem>
+					<ProductTaxItem>
+						<TaxCode>A0</TaxCode> <!-- ??? define AO = 0% Output Tax non taxable -->
+						<TaxItemClassification>MWS</TaxItemClassification> <!-- get code in readme -->
+						<IsDirectTaxPosting>true</IsDirectTaxPosting>
+						<AmountInTransactionCurrency currencyCode="EUR">0</AmountInTransactionCurrency> devise + reste 0 car A0
+						<DebitCreditCode>S</DebitCreditCode> <!-- optional define in function AmountInTransactionCurrency (credit define S (+) and credit define H (-)) --> h si avoir sinon S
+						<TaxBaseAmountInTransCrcy currencyCode="EUR">10</TaxBaseAmountInTransCrcy> devise + montant de la créance
+					</ProductTaxItem>
+				</JournalEntry>
+			</JournalEntryCreateRequest>
+		</sfin:JournalEntryBulkCreateRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

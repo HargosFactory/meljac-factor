@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+    <soapenv:Header>
+        <msgID:messageId xmlns:msgID="http://www.sap.com/webas/640/soap/features/messageId/">uuid:00163e02-a5da-1ee1-a7d5-e24f8067c623</msgID:messageId>
+    </soapenv:Header>
+    <soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+            <MessageHeader>
+                <CreationDateTime>2024-09-17T12:08:38Z</CreationDateTime>
+                <ID>MSG_2024-09_17_1</ID>
+            </MessageHeader>
+            <JournalEntryCreateRequest>
+                <MessageHeader>
+                    <CreationDateTime>2024-09-17T12:08:38Z</CreationDateTime>
+                    <ID>SUBMSG_2024-09-17_1</ID>
+                </MessageHeader>
+                <JournalEntry>
+                    <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+                    <OriginalReferenceDocument>doc.ref</OriginalReferenceDocument>
+                    <OriginalReferenceDocumentLogicalSystem>XYZ</OriginalReferenceDocumentLogicalSystem>
+                    <BusinessTransactionType>RFBU</BusinessTransactionType>
+                    <AccountingDocumentType>UE</AccountingDocumentType>
+                    <DocumentReferenceID>2587690</DocumentReferenceID>
+                    <DocumentHeaderText>htext</DocumentHeaderText>
+                    <CreatedByUser>CB9980000080</CreatedByUser>
+                    <CompanyCode>1000</CompanyCode>
+                    <DocumentDate>2023-11-01</DocumentDate>
+                    <PostingDate>2024-09-17</PostingDate>
+                    <TaxDeterminationDate>2023-11-26</TaxDeterminationDate>
+                    <Reference1InDocumentHeader>Ref1</Reference1InDocumentHeader>
+                    <Reference2InDocumentHeader>Ref2</Reference2InDocumentHeader>
+                    <Item>
+                        <GLAccount>46710000</GLAccount>
+                        <AmountInTransactionCurrency currencyCode="EUR">-137.82</AmountInTransactionCurrency>
+                        <DebitCreditCode>H</DebitCreditCode>
+                        <DocumentItemText>STUDIO ON</DocumentItemText>
+                    </Item>
+                    <DebtorItem>
+                        <ReferenceDocumentItem>1</ReferenceDocumentItem>
+                        <Debtor>1007053</Debtor>
+                        <AmountInTransactionCurrency currencyCode="EUR">137.82</AmountInTransactionCurrency>
+                        <DebitCreditCode>S</DebitCreditCode>
+                    </DebtorItem>
+                    <ProductTaxItem>
+                        <TaxCode>A0</TaxCode>
+                        <TaxItemClassification>MWS</TaxItemClassification>
+                        <IsDirectTaxPosting>true</IsDirectTaxPosting>
+                        <AmountInTransactionCurrency currencyCode="EUR">0.00</AmountInTransactionCurrency>
+                        <DebitCreditCode>H</DebitCreditCode>
+                        <TaxBaseAmountInTransCrcy currencyCode="EUR">-137.82</TaxBaseAmountInTransCrcy>
+                    </ProductTaxItem>
+                </JournalEntry>
+            </JournalEntryCreateRequest>
+        </sfin:JournalEntryBulkCreateRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

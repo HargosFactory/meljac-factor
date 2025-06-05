@@ -1,0 +1,10 @@
+Titre : Paiements;;;;;;;;;;;;;;;;
+Compte client : 78569-MELJAC-Standard-Domestique-EUR;;;;;;;;;;;;;;;;
+Export réalisé le : 21/03/2024;;;;;;;;;;;;;;;;
+À partir du : 20/03/2024;;;;;;;;;;;;;;;;
+Jusqu'au : 20/03/2024;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+Raison sociale;SIREN;NIC;Code acheteur;Ma référence;Mode de paiement;Date de saisie;Montant (EUR);Montant affecté (EUR);Solde;Statut;Numéro de paiement;Date d'échéance;Motif de non affectation;Nom du donneur d'ordre;Numéro du document;Type de document
+ANGE ET LUX;491308474;23;4640864;8279;Virement;20/03/2024;2,96;2,96;0;Paiement affecté;70251632;-;;ANGE ET LUX                        ;202401071;Facture
+VIBERT ECLAIRAGE;491158127;36;4640866;4085;Virement;20/03/2024;18 911,93;18 911,93;0;Paiement affecté;70251629;-;;SARL  VIBERT ECLAIRAGE             ;plusieurs documents associées;SOLDE
+ENT D'ELECTRICITE BRENGUIER;423072172;38;4844999;264;Virement;20/03/2024;27,4;27,4;0;Paiement affecté;70251631;-;;SARL ENT D ELECTRICITE BRENGUIER   ;202401365;Facture
